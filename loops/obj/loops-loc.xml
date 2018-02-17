@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Locations>
+  <Project>
+    <vfs_file>E:\Ada\loops\loops.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 18" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 18" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 14" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 5" line=" 23" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 3" line=" 25" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 24" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 4" line=" 15" >
+      <vfs_project>E:\Ada\loops\loops.gpr</vfs_project>
+      <vfs_file>E:\Ada\loops\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
