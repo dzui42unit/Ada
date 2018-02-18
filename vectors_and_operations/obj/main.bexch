@@ -1,19 +1,19 @@
 [GENERATED OBJECT FILE]
 b__main.o
 [PROJECT FILES]
-E:\Ada\vectors_and_operations\vectors.gpr
-20180218074736
+D:\Ada\Ada_push\vectors_and_operations\vectors.gpr
+20180218214228
 [BOUND OBJECT FILES]
-E:\Ada\vectors_and_operations\obj\main.o
+D:\Ada\Ada_push\vectors_and_operations\obj\main.o
 [GENERATED SOURCE FILES]
 b__main.ads
 b__main.adb
 b__main.ali
 [RESULTING OPTIONS]
--LE:\Ada\vectors_and_operations\obj\
--LE:\Ada\vectors_and_operations\obj\
--LC:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/
+-LD:\Ada\Ada_push\vectors_and_operations\obj\
+-LD:\Ada\Ada_push\vectors_and_operations\obj\
+-LC:/mingw/lib/gcc/mingw32/6.3.0/adalib/
 -static
 -static-libgcc
-C:/gnat/2017/lib/gcc/i686-pc-mingw32/6.3.1/adalib/libgnat.a
+C:/mingw/lib/gcc/mingw32/6.3.0/adalib/libgnat.a
 -Wl,--stack=0x2000000

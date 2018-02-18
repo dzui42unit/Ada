@@ -32,7 +32,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_ALIASING
 RV SPARK_05
 
-U lab1%b		lab1.adb		64c0e332 NE OO SU
+U lab1%b		lab1.adb		e42e9cdd NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 Z ada.containers.generic_array_sort%s
@@ -78,7 +78,7 @@ D a-unccon.ads		20180127140006 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20180127140012 f15a5ed1 ada.unchecked_deallocation%s
 D interfac.ads		20180127140012 4be8ce1b interfaces%s
 D i-cstrea.ads		20180127140008 e53d8b8e interfaces.c_streams%s
-D lab1.adb		20180218213616 d4cd909d lab1%b
+D lab1.adb		20180218220032 5423ef72 lab1%b
 D system.ads		20180127140010 2da59038 system%s
 D s-addima.ads		20180127140006 a1ec9d3a system.address_image%s
 D s-atocou.ads		20180127140006 b45c2d8d system.atomic_counters%s
@@ -111,11 +111,13 @@ X 2 a-contai.ads
 16K13*Containers 24e19 21|1r10 2r9
 X 6 a-convec.ads
 46k24*Vectors 518e27 21|1w21 9r23
-57R9 Vector<9|43R9> 21|15r14[9] 19r39[9] 42r37[9] 49r12[9]
-65R9 Cursor 21|37r35[9]
-119V13 Element{integer} 21|39s11[9]
+57R9 Vector<9|43R9> 21|15r14[9] 19r39[9] 42r37[9] 56r12[9]
+65R9 Cursor 21|37r35[9] 43r13[9]
+70V13 Has_Element{boolean} 21|47s13[9]
+119V13 Element{integer} 21|39s11[9] 49s14[9]
 245U14 Append 21|31s12[9]
-329U14 Iterate 21|45s9[9]
+287V13 First{65R9[21|9]} 21|46s15[9]
+299U14 Next 21|50s10[9]
 X 10 a-inteio.ads
 18K13*Integer_Text_IO[16|46] 21|1w47 2r38
 X 12 a-iteint.ads
@@ -123,27 +125,27 @@ X 12 a-iteint.ads
 32h9 Reversible_Iterator<24R9[6|72]>
 X 15 a-textio.ads
 49K13*Text_IO 471e16 21|1w34 2r25
-166U14*New_Line 21|46s7
 242U14*Put 21|23s7 27s10 29s10
-263U14*Put_Line 21|44s7
+263U14*Put_Line 21|45s4
 X 16 a-tiinio.ads
 56U14*Get 21|24s7[10|18] 30s10[10|18]
-66U14*Put 21|28s10[10|18] 39s7[10|18]
+66U14*Put 21|28s10[10|18] 39s7[10|18] 49s10[10|18]
 X 21 lab1.adb
-5U11*Lab1 5b11 57l5 57t9
-9K12 vec[6|46] 11r8 15r10 19r35 42r33 49r8
-15r4 A{6|57R9[9]} 52m17 54r16
-15r6 B{6|57R9[9]} 53m17 55r16
-19U14 AssignVector 19b14 19<27 33l8 33t20 52s4 53s4
+5U11*Lab1 5b11 64l5 64t9
+9K12 vec[6|46] 11r8 15r10 19r35 42r33 56r8
+15r4 A{6|57R9[9]} 59m17 61r16
+15r6 B{6|57R9[9]} 60m17 62r16
+19U14 AssignVector 19b14 19<27 33l8 33t20 59s4 60s4
 19r27 A{6|57R9[9]} 31m10 31r10
 20i7 N{natural} 24m11 25r27
 21i7 Temp{integer} 30m14 31r19
 25i11 Counter{integer} 28r14
-37U14 PrintElem 37b14 37>24 40l8 40t17 45r17
+37U14 PrintElem 37b14 37>24 40l8 40t17
 37r24 Position{6|65R9[9]} 39r19
-42U14 PrintVector 42b14 42>26 47t7 54s4 55s4
-42r26 V{6|57R9[9]} 45r7
-49r4 C{6|57R9[9]}
+42U14 PrintVector 42b14 42>26 54t7 61s4 62s4
+42r26 V{6|57R9[9]} 46r21
+43r6 Iter{6|65R9[9]} 46m7 47r25 49r22 50m15 50r15
+56r4 C{6|57R9[9]}
 X 22 system.ads
 67M9*Address
 X 33 s-memory.ads

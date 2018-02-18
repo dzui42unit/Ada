@@ -39,11 +39,21 @@ procedure Lab1 is
       Put(Element(Position));
    end PrintElem;
 
+   -- prints a content of a vector
+
    procedure PrintVector(V : in vec.Vector) is
+     Iter : Cursor;
    begin
-      Put_Line("CONTENT OF A VECTOR");
-      V.Iterate(PrintElem'Access);
-      New_Line;
+   Put_Line("CONTENT OF A VECTOR");
+      Iter := First(V);
+      while Has_Element(Iter)
+      loop
+         Put(Element(Iter));
+         Next(Iter);
+      end loop;
+
+      --V.Iterate(PrintElem'Access);
+      --New_Line;
    end;
 
    C : vec.Vector;

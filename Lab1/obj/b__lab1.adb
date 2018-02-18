@@ -227,9 +227,9 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   D:\Projects\Lab1\obj\lab1.o
-   --   -LD:\Projects\Lab1\obj\
-   --   -LD:\Projects\Lab1\obj\
+   --   D:\Ada\Ada_push\Lab1\obj\lab1.o
+   --   -LD:\Ada\Ada_push\Lab1\obj\
+   --   -LD:\Ada\Ada_push\Lab1\obj\
    --   -LC:/mingw/lib/gcc/mingw32/6.3.0/adalib/
    --   -static
    --   -lgnat

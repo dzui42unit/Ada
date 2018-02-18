@@ -179,6 +179,8 @@ procedure Main is
    A, B, RES : vector;
 
 begin
+
+
    AssignVec(A);
    AssignVec(B);
    ResetVector(RES);

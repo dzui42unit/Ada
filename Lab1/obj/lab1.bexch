@@ -1,17 +1,17 @@
 [GENERATED OBJECT FILE]
 b__lab1.o
 [PROJECT FILES]
-D:\Projects\Lab1\lab1.gpr
+D:\Ada\Ada_push\Lab1\lab1.gpr
 20180218183240
 [BOUND OBJECT FILES]
-D:\Projects\Lab1\obj\lab1.o
+D:\Ada\Ada_push\Lab1\obj\lab1.o
 [GENERATED SOURCE FILES]
 b__lab1.ads
 b__lab1.adb
 b__lab1.ali
 [RESULTING OPTIONS]
--LD:\Projects\Lab1\obj\
--LD:\Projects\Lab1\obj\
+-LD:\Ada\Ada_push\Lab1\obj\
+-LD:\Ada\Ada_push\Lab1\obj\
 -LC:/mingw/lib/gcc/mingw32/6.3.0/adalib/
 -static
 -static-libgcc
