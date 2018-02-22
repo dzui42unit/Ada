@@ -6,63 +6,26 @@ A -march=i586
 P SS ZX
 
 RN
-RV NO_ACCESS_SUBPROGRAMS
-RV NO_ALLOCATORS
-RV NO_DIRECT_BOOLEAN_OPERATORS
-RV NO_DISPATCH
-RV NO_DISPATCHING_CALLS
-RV NO_EXCEPTION_HANDLERS
-RV NO_EXCEPTION_PROPAGATION
-RV NO_EXCEPTIONS
 RV NO_IO
-RV NO_IMPLICIT_CONDITIONALS
-RV NO_IMPLICIT_DYNAMIC_CODE
-RV NO_IMPLICIT_LOOPS
-RV NO_LOCAL_ALLOCATORS
-RV NO_NESTED_FINALIZATION
 RV NO_SECONDARY_STACK
-RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
 RV NO_STANDARD_STORAGE_POOLS
-RV NO_STREAMS
-RV NO_UNCHECKED_ACCESS
-RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
-RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
-RV NO_IMPLICIT_ALIASING
 RV SPARK_05
 
-U lab1%b		lab1.adb		e42e9cdd NE OO SU
+U lab1%b		lab1.adb		9d689a4c NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
-Z ada.containers.generic_array_sort%s
-Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
 W ada.containers.vectors%s
-W ada.exceptions%s	a-except.adb		a-except.ali
-Z ada.finalization%s	a-finali.ads		a-finali.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
-Z ada.iterator_interfaces%s
-W ada.streams%s		a-stream.adb		a-stream.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z ada.unchecked_deallocation%s
-W system%s		system.ads		system.ali
-W system.address_image%s  s-addima.adb		s-addima.ali
-W system.concat_2%s	s-conca2.adb		s-conca2.ali
-W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
-W system.soft_links%s	s-soflin.adb		s-soflin.ali
-W system.standard_library%s  s-stalib.adb	s-stalib.ali
-W system.storage_elements%s  s-stoele.adb	s-stoele.ali
-W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
-W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
-W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
 
 D ada.ads		20180127140010 3ffc8e18 ada%s
 D a-contai.ads		20180127140006 61e5e089 ada.containers%s
 D a-cgarso.ads		20180127140012 9129bfa8 ada.containers.generic_array_sort%s
 D a-conhel.ads		20180127140012 20298884 ada.containers.helpers%s
-D a-conhel.adb		20180127140012 34fff4f6 ada.containers.helpers%b
 D a-convec.ads		20180127140006 7e2b0fdf ada.containers.vectors%s
 D a-convec.adb		20180127140006 89163169 ada.containers.vectors%b
 D a-except.ads		20180127140012 291912d5 ada.exceptions%s
@@ -78,80 +41,78 @@ D a-unccon.ads		20180127140006 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20180127140012 f15a5ed1 ada.unchecked_deallocation%s
 D interfac.ads		20180127140012 4be8ce1b interfaces%s
 D i-cstrea.ads		20180127140008 e53d8b8e interfaces.c_streams%s
-D lab1.adb		20180218220032 5423ef72 lab1%b
+D lab1.adb		20180222211342 2d65e9e3 lab1%b
 D system.ads		20180127140010 2da59038 system%s
-D s-addima.ads		20180127140006 a1ec9d3a system.address_image%s
 D s-atocou.ads		20180127140006 b45c2d8d system.atomic_counters%s
-D s-atocou.adb		20180127140010 a9c6d721 system.atomic_counters%b
-D s-conca2.ads		20180127140006 02a0d7d0 system.concat_2%s
 D s-crtl.ads		20180127140006 0ebbdb71 system.crtl%s
 D s-exctab.ads		20180127140006 54135002 system.exception_table%s
 D s-ficobl.ads		20180127140006 078245e4 system.file_control_block%s
-D s-finmas.ads		20180127140006 7811a767 system.finalization_masters%s
 D s-finroo.ads		20180127140010 4ff27390 system.finalization_root%s
-D s-maccod.ads		20180127140006 0fbb7bce system.machine_code%s
-D s-memory.ads		20180127140012 597d6634 system.memory%s
 D s-parame.ads		20180127140006 7e2a0d7f system.parameters%s
 D s-secsta.ads		20180127140012 86a2856d system.secondary_stack%s
 D s-soflin.ads		20180127140006 14e1eb6c system.soft_links%s
 D s-stache.ads		20180127140012 a37c21ec system.stack_checking%s
 D s-stalib.ads		20180127140006 09bd3940 system.standard_library%s
-D s-stalib.adb		20180127140010 f2fe2716 system.standard_library%b
 D s-stoele.ads		20180127140012 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20180127140012 ed88f8fb system.storage_elements%b
-D s-stopoo.ads		20180127140006 b16154c2 system.storage_pools%s
-D s-stposu.ads		20180127140012 97a6219c system.storage_pools.subpools%s
-D s-stratt.ads		20180127140012 aedef97e system.stream_attributes%s
 D s-traent.ads		20180127140006 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180127140010 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20180127140010 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 19e8 21|1r6 1r30 1r43 2r5 2r21 2r34
+16K9*Ada 19e8 20|1r6 1r30 1r43 2r5 2r21 2r34
 X 2 a-contai.ads
-16K13*Containers 24e19 21|1r10 2r9
-X 6 a-convec.ads
-46k24*Vectors 518e27 21|1w21 9r23
-57R9 Vector<9|43R9> 21|15r14[9] 19r39[9] 42r37[9] 56r12[9]
-65R9 Cursor 21|37r35[9] 43r13[9]
-70V13 Has_Element{boolean} 21|47s13[9]
-119V13 Element{integer} 21|39s11[9] 49s14[9]
-245U14 Append 21|31s12[9]
-287V13 First{65R9[21|9]} 21|46s15[9]
-299U14 Next 21|50s10[9]
-X 10 a-inteio.ads
-18K13*Integer_Text_IO[16|46] 21|1w47 2r38
-X 12 a-iteint.ads
+16K13*Containers 24e19 20|1r10 2r9
+X 5 a-convec.ads
+46k24*Vectors 518e27 20|1w21
+X 9 a-inteio.ads
+18K13*Integer_Text_IO[15|46] 20|1w47 2r38
+X 11 a-iteint.ads
 24h9 Forward_Iterator
-32h9 Reversible_Iterator<24R9[6|72]>
-X 15 a-textio.ads
-49K13*Text_IO 471e16 21|1w34 2r25
-242U14*Put 21|23s7 27s10 29s10
-263U14*Put_Line 21|45s4
-X 16 a-tiinio.ads
-56U14*Get 21|24s7[10|18] 30s10[10|18]
-66U14*Put 21|28s10[10|18] 39s7[10|18] 49s10[10|18]
-X 21 lab1.adb
-5U11*Lab1 5b11 64l5 64t9
-9K12 vec[6|46] 11r8 15r10 19r35 42r33 56r8
-15r4 A{6|57R9[9]} 59m17 61r16
-15r6 B{6|57R9[9]} 60m17 62r16
-19U14 AssignVector 19b14 19<27 33l8 33t20 59s4 60s4
-19r27 A{6|57R9[9]} 31m10 31r10
-20i7 N{natural} 24m11 25r27
-21i7 Temp{integer} 30m14 31r19
-25i11 Counter{integer} 28r14
-37U14 PrintElem 37b14 37>24 40l8 40t17
-37r24 Position{6|65R9[9]} 39r19
-42U14 PrintVector 42b14 42>26 54t7 61s4 62s4
-42r26 V{6|57R9[9]} 46r21
-43r6 Iter{6|65R9[9]} 46m7 47r25 49r22 50m15 50r15
-56r4 C{6|57R9[9]}
-X 22 system.ads
-67M9*Address
-X 33 s-memory.ads
-53V13*Alloc{22|67M9} 103i<c,__gnat_malloc>22
-68U14*Free 104i<c,__gnat_free>22
-76V13*Realloc{22|67M9} 105i<c,__gnat_realloc>22
-X 39 s-stalib.adb
-93U14 Break_Start 94i<c,__gnat_break_start>22
+32h9 Reversible_Iterator<24R9[5|72]>
+X 14 a-textio.ads
+49K13*Text_IO 471e16 20|1w34 2r25
+166U14*New_Line 20|40s10
+242U14*Put 20|15s10
+X 15 a-tiinio.ads
+56U14*Get 20|16s10[9|18] 25s16[9|18]
+66U14*Put 20|38s16[9|18]
+X 20 lab1.adb
+4U11*Lab1 4b11 108l5 108t9
+9A9 matrix(integer)<integer><integer> 12r53 19r15 32r34 45r40 45r68 48r16
+. 65r35 65r63 68r16 85r44 88r16 101r9 102r9 103r9
+10i4 N{natural} 101m32 101r32 102m32 102r32 103m32 103r32 106r33
+12V13 CreateMatrix{9A9} 12b13 12=26 30l8 30t20 101s19 102s19 103s19
+12i26 N{natural} 16m14 19r27 19r35
+19a10 MA{9A9} 21r19 21r34 23r22 23r37 25m20 25r20 28r18
+21i14 i{integer} 25r23
+23i17 j{integer} 25r26
+32U14 PrintMatrix 32b14 32>26 43l8 43t19 60s10 80s10 97s10
+32a26 MA{9A9} 34r16 34r31 36r22 36r37 38r20
+34i11 i{integer} 38r23
+36i17 j{integer} 38r26
+45V13 MultiplyMatrix{9A9} 45b13 45>28 45>32 45>48 63l8 63t22 106s10
+45a28 M1{9A9} 50r19 50r34 52r22 52r37 54r25 54r40 56r43
+45a32 M2{9A9} 56r54
+45i48 N{natural} 48r28 48r36
+48a10 RES{9A9} 56m19 56r32 60r22 61r18
+50i14 i{integer} 56r23 56r36 56r46 56r60
+52i17 j{integer} 56r26 56r38
+54i20 k{integer} 56r49 56r57
+65V13 AddMatrix{9A9} 65b13 65>23 65>27 65>43 83l8 83t17
+65a23 M1{9A9} 70r19 70r34 72r22 72r37 74r25 74r40 76r43
+65a27 M2{9A9} 76r54
+65i43 N{natural} 68r28 68r36
+68a10 RES{9A9} 76m19 76r32 80r22 81r18
+70i14 i{integer} 76r23 76r36 76r46 76r60
+72i17 j{integer} 76r26 76r38
+74i20 k{integer} 76r49 76r57
+85U14 MulMatrixByNumber 85b14 85=32 85>52 85>65 99l8 99t25
+85a32 M1{9A9} 90r19 90r34 92r22 92r37 94m15 94r27
+85i52 N{natural} 88r28 88r36
+85i65 NB{integer} 94r38
+88a10 RES{9A9} 97r22
+90i14 i{integer} 94r18 94r30
+92i17 j{integer} 94r21 94r33
+101a4 MA{9A9} 106r25
+102a4 MB{9A9} 106r29
+103a4 MC{9A9} 106r4
 
