@@ -1,171 +1,128 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project >
-    <file_marker column=" 1" line=" 1" >
+  <Project>
+    <vfs_file>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_file>
+    <file_marker column=" 7" line=" 101" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 18" line=" 4" >
+    <file_marker column=" 23" line=" 63" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 18" line=" 4" >
+    <file_marker column=" 23" line=" 63" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 18" line=" 4" >
+    <file_marker column=" 1" line=" 106" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 18" line=" 4" >
+    <file_marker column=" 4" line=" 10" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 5" >
+    <file_marker column=" 4" line=" 64" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 63" line=" 9" >
+    <file_marker column=" 1" line=" 106" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 5" >
+    <file_marker column=" 4" line=" 10" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 9" line=" 9" >
+    <file_marker column=" 16" line=" 14" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 5" >
+    <file_marker column=" 6" line=" 17" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 4" line=" 5" >
+    <file_marker column=" 10" line=" 16" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 33" >
+    <file_marker column=" 36" line=" 106" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 26" line=" 9" >
+    <file_marker column=" 46" line=" 45" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 73" line=" 9" >
+    <file_marker column=" 77" line=" 45" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 65" line=" 9" >
+    <file_marker column=" 11" line=" 62" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 73" line=" 9" >
+    <file_marker column=" 77" line=" 45" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 61" line=" 9" >
+    <file_marker column=" 11" line=" 62" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 73" line=" 9" >
+    <file_marker column=" 77" line=" 45" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 54" line=" 2" >
+    <file_marker column=" 11" line=" 62" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 54" line=" 2" >
+    <file_marker column=" 11" line=" 62" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 54" line=" 2" >
+    <file_marker column=" 77" line=" 45" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 54" line=" 2" >
+    <file_marker column=" 11" line=" 62" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 4" >
+    <file_marker column=" 14" line=" 51" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 10" line=" 37" >
+    <file_marker column=" 14" line=" 51" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 10" line=" 37" >
+    <file_marker column=" 4" line=" 106" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 1" line=" 33" >
+    <file_marker column=" 63" line=" 56" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 10" line=" 17" >
+    <file_marker column=" 31" line=" 85" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 15" line=" 16" >
+    <file_marker column=" 25" line=" 99" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 73" line=" 9" >
+    <file_marker column=" 63" line=" 85" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 16" line=" 10" >
+    <file_marker column=" 17" line=" 93" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 73" line=" 9" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 26" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 21" line=" 26" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 11" line=" 34" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 203" >
-      <vfs_project />
-      <vfs_file>D:\Ada\Ada_push\Lab1\obj\b__lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 26" line=" 35" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 16" line=" 30" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 5" line=" 3" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 7" line=" 30" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 1" line=" 37" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 4" line=" 5" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
-      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
-    </file_marker>
-    <file_marker current="true" column=" 7" line=" 30" >
+    <file_marker current="true" column=" 46" line=" 92" >
       <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>

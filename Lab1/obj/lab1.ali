@@ -13,7 +13,7 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U lab1%b		lab1.adb		9d689a4c NE OO SU
+U lab1%b		lab1.adb		ae2b79ae NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.containers%s	a-contai.ads		a-contai.ali
 W ada.containers.vectors%s
@@ -41,7 +41,7 @@ D a-unccon.ads		20180127140006 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20180127140012 f15a5ed1 ada.unchecked_deallocation%s
 D interfac.ads		20180127140012 4be8ce1b interfaces%s
 D i-cstrea.ads		20180127140008 e53d8b8e interfaces.c_streams%s
-D lab1.adb		20180222211342 2d65e9e3 lab1%b
+D lab1.adb		20180223205322 1e260a01 lab1%b
 D system.ads		20180127140010 2da59038 system%s
 D s-atocou.ads		20180127140006 b45c2d8d system.atomic_counters%s
 D s-crtl.ads		20180127140006 0ebbdb71 system.crtl%s
@@ -70,49 +70,59 @@ X 11 a-iteint.ads
 32h9 Reversible_Iterator<24R9[5|72]>
 X 14 a-textio.ads
 49K13*Text_IO 471e16 20|1w34 2r25
-166U14*New_Line 20|40s10
-242U14*Put 20|15s10
+166U14*New_Line 20|45s10
+242U14*Put 20|26s17 28s17 30s17 109s7 133s4
+263U14*Put_Line 20|38s7 123s4 125s4 127s4 129s4 131s4
 X 15 a-tiinio.ads
-56U14*Get 20|16s10[9|18] 25s16[9|18]
-66U14*Put 20|38s16[9|18]
+56U14*Get 20|31s17[9|18] 110s7[9|18] 134s4[9|18]
+66U14*Put 20|27s17[9|18] 29s17[9|18] 43s16[9|18]
 X 20 lab1.adb
-4U11*Lab1 4b11 108l5 108t9
-9A9 matrix(integer)<integer><integer> 12r53 19r15 32r34 45r40 45r68 48r16
-. 65r35 65r63 68r16 85r44 88r16 101r9 102r9 103r9
-10i4 N{natural} 101m32 101r32 102m32 102r32 103m32 103r32 106r33
-12V13 CreateMatrix{9A9} 12b13 12=26 30l8 30t20 101s19 102s19 103s19
-12i26 N{natural} 16m14 19r27 19r35
-19a10 MA{9A9} 21r19 21r34 23r22 23r37 25m20 25r20 28r18
-21i14 i{integer} 25r23
-23i17 j{integer} 25r26
-32U14 PrintMatrix 32b14 32>26 43l8 43t19 60s10 80s10 97s10
-32a26 MA{9A9} 34r16 34r31 36r22 36r37 38r20
-34i11 i{integer} 38r23
-36i17 j{integer} 38r26
-45V13 MultiplyMatrix{9A9} 45b13 45>28 45>32 45>48 63l8 63t22 106s10
-45a28 M1{9A9} 50r19 50r34 52r22 52r37 54r25 54r40 56r43
-45a32 M2{9A9} 56r54
-45i48 N{natural} 48r28 48r36
-48a10 RES{9A9} 56m19 56r32 60r22 61r18
-50i14 i{integer} 56r23 56r36 56r46 56r60
-52i17 j{integer} 56r26 56r38
-54i20 k{integer} 56r49 56r57
-65V13 AddMatrix{9A9} 65b13 65>23 65>27 65>43 83l8 83t17
-65a23 M1{9A9} 70r19 70r34 72r22 72r37 74r25 74r40 76r43
-65a27 M2{9A9} 76r54
-65i43 N{natural} 68r28 68r36
-68a10 RES{9A9} 76m19 76r32 80r22 81r18
-70i14 i{integer} 76r23 76r36 76r46 76r60
-72i17 j{integer} 76r26 76r38
-74i20 k{integer} 76r49 76r57
-85U14 MulMatrixByNumber 85b14 85=32 85>52 85>65 99l8 99t25
-85a32 M1{9A9} 90r19 90r34 92r22 92r37 94m15 94r27
-85i52 N{natural} 88r28 88r36
-85i65 NB{integer} 94r38
-88a10 RES{9A9} 97r22
-90i14 i{integer} 94r18 94r30
-92i17 j{integer} 94r21 94r33
-101a4 MA{9A9} 106r25
-102a4 MB{9A9} 106r29
-103a4 MC{9A9} 106r4
+4U11*Lab1 4b11 137l5 137t9
+9A9 matrix(integer)<integer><integer> 11r53 14r15 20r39 36r34 50r40 50r68
+. 53r16 70r35 70r63 73r16 90r44 93r16 116r9 117r9 118r9 119r9 120r9
+11V13 CreateMatrix{9A9} 11b13 11=26 18l8 18t20 116s19 117s19 118s19 119s19
+. 120s19
+11i26 N{natural} 14r27 14r35
+14a10 MA{9A9} 16r18
+20U14 AssignMatrix 20b14 20=27 34l8 34t20 124s4 126s4 128s4 130s4 132s4
+20a27 MA{9A9} 22r19 22r34 24r22 24r37 31m21 31r21
+22i14 i{integer} 27r21 31r24
+24i17 j{integer} 29r21 31r27
+36U14 PrintMatrix 36b14 36>26 48l8 48t19 65s10 85s10 102s10
+36a26 MA{9A9} 39r16 39r31 41r22 41r37 43r20
+39i11 i{integer} 43r23
+41i17 j{integer} 43r26
+50V13 MultiplyMatrix{9A9} 50b13 50>28 50>32 50>48 68l8 68t22
+50a28 M1{9A9} 55r19 55r34 57r22 57r37 59r25 59r40 61r43
+50a32 M2{9A9} 61r54
+50i48 N{natural} 53r28 53r36
+53a10 RES{9A9} 61m19 61r32 65r22 66r18
+55i14 i{integer} 61r23 61r36 61r46 61r60
+57i17 j{integer} 61r26 61r38
+59i20 k{integer} 61r49 61r57
+70V13 AddMatrix{9A9} 70b13 70>23 70>27 70>43 88l8 88t17
+70a23 M1{9A9} 75r19 75r34 77r22 77r37 79r25 79r40 81r43
+70a27 M2{9A9} 81r54
+70i43 N{natural} 73r28 73r36
+73a10 RES{9A9} 81m19 81r32 85r22 86r18
+75i14 i{integer} 81r23 81r36 81r46 81r60
+77i17 j{integer} 81r26 81r38
+79i20 k{integer} 81r49 81r57
+90U14 MulMatrixByNumber 90b14 90=32 90>52 90>65 104l8 104t25
+90a32 M1{9A9} 95r19 95r34 97r22 97r37 99m15 99r27
+90i52 N{natural} 93r28 93r36
+90i65 NB{integer} 99r38
+93a10 RES{9A9} 102r22
+95i14 i{integer} 99r18 99r30
+97i17 j{integer} 99r21 99r33
+106V13 GetSize{natural} 106b13 112t7 114s19
+107i6 N{integer} 110m11 111r15
+114i4 N{natural} 116m32 116r32 117m32 117r32 118m32 118r32 119m32 119r32
+. 120m32 120r32
+115i4 S{integer} 134m8
+116a4 MA{9A9} 124r17
+117a4 MB{9A9} 126r17
+118a4 MC{9A9} 128r17
+119a4 MM{9A9} 130r17
+120a4 MK{9A9} 132r17
 

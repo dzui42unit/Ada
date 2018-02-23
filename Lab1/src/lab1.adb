@@ -7,30 +7,35 @@ procedure Lab1 is
    -- matrix is a two dimensional array of integers
 
    type matrix is array (Integer range <>, Integer range <>) of Integer;
-   N : Natural := 0;
 
    function CreateMatrix(N : in out Natural) return matrix is
    begin
-      --if N = 0 then
-         Put("Enter a size of matrix: ");
-         Get(N);
-      --end if;
       declare
          MA : matrix(1 .. N, 1 .. N) := (others => (others => 0));
-         begin
-         for i in MA'First(1) .. MA'Last(1)
-         loop
-            for j in MA'First(2) .. MA'Last(2)
-            loop
-               Get(MA(i, j));
-            end loop;
-         end loop;
+      begin
          return (MA);
       end;
    end CreateMatrix;
 
+   procedure AssignMatrix(MA : in out matrix) is
+   begin
+         for i in MA'First(1) .. MA'Last(1)
+         loop
+            for j in MA'First(2) .. MA'Last(2)
+            loop
+                Put("Enter element ");
+                Put(i);
+                Put(" ");
+                Put(j);
+                Put(" ");
+                Get(MA(i, j));
+            end loop;
+         end loop;
+   end AssignMatrix;
+
    procedure PrintMatrix(MA : in matrix) is
    begin
+      Put_Line("MATRIX");
       for i in MA'First(1) .. MA'Last(1)
          loop
             for j in MA'First(2) .. MA'Last(2)
@@ -98,11 +103,35 @@ procedure Lab1 is
       end;
    end MulMatrixByNumber;
 
+   function GetSize return Natural is
+     N : Integer;
+   begin
+      Put("Enter an number of elements in matrix: ");
+      Get(N);
+      return (N);
+   end;
+
+   N : Natural := GetSize;
+   S : Integer;
    MA : matrix := CreateMatrix(N);
    MB : matrix := CreateMatrix(N);
    MC : matrix := CreateMatrix(N);
+   MM : matrix := CreateMatrix(N);
+   MK : matrix := CreateMatrix(N);
 
 begin
-   MC := MultiplyMatrix(MA, MB, N);
+   Put_Line("Assign Matrix MA:");
+   AssignMatrix(MA);
+   Put_Line("Assign Matrix MB:");
+   AssignMatrix(MB);
+   Put_Line("Assign Matrix MC:");
+   AssignMatrix(MC);
+   Put_Line("Assign Matrix MM:");
+   AssignMatrix(MM);
+   Put_Line("Assign Matrix MK:");
+   AssignMatrix(MK);
+   Put("Enter variable S: ");
+   Get(S);
+
    null;
 end Lab1;
