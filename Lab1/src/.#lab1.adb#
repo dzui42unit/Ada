@@ -313,8 +313,5 @@ begin
    Put_Line("Lab1 PROCESS STARTED!");
    Set_True(SemCopy);
    RunTasks;
-   New_Line;
-   New_Line;
-   PrintMatrix(MC_MUL_MK);
    null;
 end Lab1;
