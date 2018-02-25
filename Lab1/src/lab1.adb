@@ -1,12 +1,34 @@
-with Ada.Containers.Vectors, Ada.Text_IO, Ada.Integer_Text_IO;
-use Ada.Containers, Ada.Text_IO, Ada.Integer_Text_IO;
+with Ada.Containers.Vectors, Ada.Text_IO, Ada.Integer_Text_IO, Ada.Synchronous_Task_Control;
+use Ada.Containers, Ada.Text_IO, Ada.Integer_Text_IO, Ada.Synchronous_Task_Control;
 
 procedure Lab1 is
 
    -- N is the size of matrix
    -- matrix is a two dimensional array of integers
+   -- list of function prototypes used in the program
 
    type matrix is array (Integer range <>, Integer range <>) of Integer;
+   function GetSize return Natural;
+
+   function GetSize return Natural is
+     N : Integer;
+   begin
+      Put("Enter an number of elements in matrix: ");
+      Get(N);
+      return (N);
+   end;
+
+   N : Natural := GetSize;
+
+   S : Integer;
+
+   SemT1Input : Suspension_Object;
+   SemT3Input : Suspension_Object;
+   SemT4Input : Suspension_Object;
+
+   function CreateMatrix(N : in out Natural) return matrix;
+   procedure AssignMatrix(MA : in out matrix);
+   procedure PrintMatrix(MA : in matrix);
 
    function CreateMatrix(N : in out Natural) return matrix is
    begin
@@ -16,6 +38,12 @@ procedure Lab1 is
          return (MA);
       end;
    end CreateMatrix;
+
+   MA : matrix := CreateMatrix(N);
+   MB : matrix := CreateMatrix(N);
+   MC : matrix := CreateMatrix(N);
+   MM : matrix := CreateMatrix(N);
+   MK : matrix := CreateMatrix(N);
 
    procedure AssignMatrix(MA : in out matrix) is
    begin
@@ -44,94 +72,68 @@ procedure Lab1 is
          end loop;
          New_Line;
       end loop;
-
    end PrintMatrix;
 
-   function MultiplyMatrix(M1, M2 : in matrix; N : Natural) return matrix is
-   begin
-      declare
-         RES : matrix(1 .. N, 1 .. N) := (others => (others => 0));
+   procedure RunTasks is
+      task T1;
+      task T2;
+      task T3;
+      task T4;
+
+      task body T1 is
+
       begin
-         for i in M1'First(1) .. M1'Last(1)
-         loop
-            for j in M1'First(1) .. M1'Last(1)
-            loop
-               for k in M1'First(1) .. M1'Last(1)
-               loop
-                  RES(i, j) := RES(i,j) + M1(i, k) * M2(k, i);
-               end loop;
-            end loop;
-         end loop;
-         PrintMatrix(RES);
-         return (RES);
-      end;
-   end MultiplyMatrix;
+         Put_Line("PROCESS T1 STARTED!");
 
-   function AddMatrix(M1, M2 : in matrix; N : Natural) return matrix is
-   begin
-      declare
-         RES : matrix(1 .. N, 1 .. N) := (others => (others => 0));
+         Put_Line("ENTER MATRIX MB");
+         AssignMatrix(MA);
+         Set_True(SemT1Input);
+         Put_Line("PROCESS T1 FINISHED!");
+      end T1;
+
+      task body T2 is
       begin
-         for i in M1'First(1) .. M1'Last(1)
-         loop
-            for j in M1'First(1) .. M1'Last(1)
-            loop
-               for k in M1'First(1) .. M1'Last(1)
-               loop
-                  RES(i, j) := RES(i,j) + M1(i, k) + M2(k, i);
-               end loop;
-            end loop;
-         end loop;
-         PrintMatrix(RES);
-         return (RES);
-      end;
-   end AddMatrix;
+         Suspend_Until_True(SemT4Input);
+         Put_Line("PROCESS T2 STARTED");
 
-   procedure MulMatrixByNumber(M1 : in out matrix; N : Natural; NB : Integer) is
-   begin
-      declare
-         RES : matrix(1 .. N, 1 .. N) := (others => (others => 0));
+
+
+         Put_Line("PROCESS T2 FINISHED!");
+      end T2;
+
+      task body T3 is
       begin
-         for i in M1'First(1) .. M1'Last(1)
-         loop
-            for j in M1'First(1) .. M1'Last(1)
-            loop
-              M1(i, j) := M1(i, j) * NB;
-            end loop;
-         end loop;
-         PrintMatrix(RES);
-      end;
-   end MulMatrixByNumber;
 
-   function GetSize return Natural is
-     N : Integer;
+         Suspend_Until_True(SemT1Input);
+         Put_Line("PROCESS T3 STARTED");
+         Put_Line("ENTER MATRIX MK");
+         AssignMatrix(MK);
+         Put_Line("ENTER MATRIX MM");
+         AssignMatrix(MM);
+         Set_True(SemT3Input);
+         Put_Line("PROCESS T3 FINISHED!");
+      end T3;
+
+      task body T4 is
+      begin
+         Suspend_Until_True(SemT3Input);
+         Put_Line("PROCESS T4 STARTED");
+
+         Put_Line("ENTER MATRIX MC");
+         AssignMatrix(MC);
+         Put("ENTER S VALUE");
+         Get(S);
+         Set_True(SemT4Input);
+         Put_Line("PROCESS T4 FINISHED!");
+      end T4;
+
    begin
-      Put("Enter an number of elements in matrix: ");
-      Get(N);
-      return (N);
-   end;
-
-   N : Natural := GetSize;
-   S : Integer;
-   MA : matrix := CreateMatrix(N);
-   MB : matrix := CreateMatrix(N);
-   MC : matrix := CreateMatrix(N);
-   MM : matrix := CreateMatrix(N);
-   MK : matrix := CreateMatrix(N);
+      null;
+   end RunTasks;
 
 begin
-   Put_Line("Assign Matrix MA:");
-   AssignMatrix(MA);
-   Put_Line("Assign Matrix MB:");
-   AssignMatrix(MB);
-   Put_Line("Assign Matrix MC:");
-   AssignMatrix(MC);
-   Put_Line("Assign Matrix MM:");
-   AssignMatrix(MM);
-   Put_Line("Assign Matrix MK:");
-   AssignMatrix(MK);
-   Put("Enter variable S: ");
-   Get(S);
-
+   Put_Line("Lab1 PROCESS STARTED!");
+   RunTasks;
+   Put_Line("Lab1 PROCESS FINISHED!");
    null;
 end Lab1;

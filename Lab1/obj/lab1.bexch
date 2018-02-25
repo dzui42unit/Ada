@@ -15,5 +15,8 @@ b__lab1.ali
 -LC:/mingw/lib/gcc/mingw32/6.3.0/adalib/
 -static
 -static-libgcc
+C:/mingw/lib/gcc/mingw32/6.3.0/adalib/libgnarl.a
 C:/mingw/lib/gcc/mingw32/6.3.0/adalib/libgnat.a
--Wl,--stack=0x2000000
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
