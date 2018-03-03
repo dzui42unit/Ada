@@ -177,7 +177,7 @@ procedure Lab1 is
          MB_COPY1 := MB;
          Set_True(SemCopy);
 
-         MultiplyMatrix(MK_COPY1, MK_COPY1, MC_MUL_MK, 1, H);
+         MultiplyMatrix(MC_COPY1, MK_COPY1, MC_MUL_MK, 1, H);
          MulMatrixByNumber(MM, 1, H, S_COPY1);
 
          SetTrue;
@@ -186,6 +186,7 @@ procedure Lab1 is
          Put_Line("MC * MK");
          PrintMatrix(MC_MUL_MK);
          Put_Line("MM * S");
+         MulMatrixByNumber(MM, 1, H, S_COPY1);
          PrintMatrix(MM);
 
 
@@ -235,7 +236,7 @@ procedure Lab1 is
          MB_COPY2 := MB;
          Set_True(SemCopy);
 
-         MultiplyMatrix(MK_COPY2, MK_COPY2, MC_MUL_MK, H + 1, 2 * H);
+         MultiplyMatrix(MC_COPY2, MK_COPY2, MC_MUL_MK, H + 1, 2 * H);
          MulMatrixByNumber(MM, H + 1, 2 * H, S_COPY2);
          SetTrue;
 
@@ -289,7 +290,7 @@ procedure Lab1 is
          MB_COPY3 := MB;
          Set_True(SemCopy);
 
-         MultiplyMatrix(MK_COPY3, MK_COPY3, MC_MUL_MK, 2 * H + 1, 3 * H);
+         MultiplyMatrix(MC_COPY3, MK_COPY3, MC_MUL_MK, 2 * H + 1, 3 * H);
          MulMatrixByNumber(MM, 2 * H + 1, 3 * H, S_COPY3);
          SetTrue;
 
@@ -343,7 +344,7 @@ procedure Lab1 is
          MB_COPY4 := MB;
          Set_True(SemCopy);
 
-         MultiplyMatrix(MK_COPY4, MK_COPY4, MC_MUL_MK, 3 * H + 1, 4 * H);
+         MultiplyMatrix(MC_COPY4, MK_COPY4, MC_MUL_MK, 3 * H + 1, 4 * H);
          MulMatrixByNumber(MM, 3 * H + 1, 4 * H, S_COPY4);
          SetTrue;
 
