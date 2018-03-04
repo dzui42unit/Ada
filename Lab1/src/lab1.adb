@@ -166,7 +166,6 @@ procedure Lab1 is
 
          SetTrue;
          Suspend;
-
          Suspend_Until_True(SemCopy);
          MK_COPY1 := MK;
          MC_COPY1 := MC;
@@ -266,7 +265,6 @@ procedure Lab1 is
          Put_Line("ENTER MATRIX MM");
          AssignMatrix(MM);
 
-         Set_True(Sem34);
          SetTrue;
          Suspend;
 
