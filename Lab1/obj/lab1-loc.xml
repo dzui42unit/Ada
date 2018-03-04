@@ -1,22 +1,53 @@
 <?xml version="1.0"?>
 <Locations >
   <Project>
-    <vfs_file>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_file>
+    <vfs_file />
     <file_marker column=" 13" line=" 104" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
+      <vfs_project />
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
     <file_marker column=" 19" line=" 108" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
+      <vfs_project />
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
     <file_marker column=" 9" line=" 110" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
+      <vfs_project />
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 3" line=" 112" >
-      <vfs_project>D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
+    <file_marker column=" 1" line=" 112" >
+      <vfs_project />
       <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 29" line=" 259" >
+      <vfs_project />
+      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 123" >
+      <vfs_project />
+      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 7" >
+      <vfs_project />
+      <vfs_file>D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_file>
+    <file_marker column=" 13" line=" 104">
+      <vfs_project >D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
+      <vfs_file >D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 108">
+      <vfs_project >D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
+      <vfs_file >D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 110">
+      <vfs_project >D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
+      <vfs_file >D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 3" line=" 112">
+      <vfs_project >D:\Ada\Ada_push\Lab1\lab1.gpr</vfs_project>
+      <vfs_file >D:\Ada\Ada_push\Lab1\src\lab1.adb</vfs_file>
     </file_marker>
   </Project>
   <Project >

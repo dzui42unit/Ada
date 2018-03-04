@@ -61,13 +61,13 @@ procedure Lab1 is
          loop
             for j in MA'First(2) .. MA'Last(2)
             loop
-                --Put("Enter element ");
-                --Put(i);
-                --Put(" ");
-                --Put(j);
-                --Put(" ");
-                --Get(MA(i, j));
-                MA(i, j) := i;
+                Put("Enter element ");
+                Put(i);
+                Put(" ");
+                Put(j);
+                Put(" ");
+                Get(MA(i, j));
+                --MA(i, j) := i;
             end loop;
          end loop;
    end AssignMatrix;
@@ -93,7 +93,7 @@ procedure Lab1 is
          loop
             for k in 1 .. N
             loop
-               RES(i, j) := RES(i,j) + M1(i, k) * M2(k, i);
+               RES(i, j) := RES(i,j) + M1(i, k) * M2(k, j);
             end loop;
       end loop;
    end loop;

@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+D:\Ada\Ada_push\test\default.gpr
+20180304200310
+[BOUND OBJECT FILES]
+D:\Ada\Ada_push\test\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LD:\Ada\Ada_push\test\obj\
+-LD:\Ada\Ada_push\test\obj\
+-LC:/mingw/lib/gcc/mingw32/6.3.0/adalib/
+-static
+-static-libgcc
+C:/mingw/lib/gcc/mingw32/6.3.0/adalib/libgnarl.a
+C:/mingw/lib/gcc/mingw32/6.3.0/adalib/libgnat.a
+-Xlinker
+--stack=0x200000,0x1000
+-mthreads
