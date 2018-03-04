@@ -239,7 +239,6 @@ procedure Lab1 is
       task body T3 is
          MC_COPY3 : matrix := CreateMatrix(N);
          MK_COPY3 : matrix := CreateMatrix(N);
-         MM_COPY3 : matrix := CreateMatrix(N);
          MB_COPY3 : matrix := CreateMatrix(N);
          S_COPY3 : Integer;
 
@@ -271,7 +270,6 @@ procedure Lab1 is
          Suspend_Until_True(SemCopy);
          MK_COPY3 := MK;
          MC_COPY3 := MC;
-         MM_COPY3 := MM;
          S_COPY3 := S;
          MB_COPY3 := MB;
          Set_True(SemCopy);
