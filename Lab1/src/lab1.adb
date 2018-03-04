@@ -121,8 +121,6 @@ procedure Lab1 is
      end loop;
    end MulMatrixByNumber;
 
-   Inp1, Inp2, Inp3 : Suspension_Object;
-
    Sem12, Sem13, Sem14 : Suspension_Object;
    Sem21, Sem23, Sem24 : Suspension_Object;
    Sem31, Sem32, Sem34 : Suspension_Object;
@@ -165,8 +163,6 @@ procedure Lab1 is
 
          Put_Line("ENTER MATRIX MB");
          AssignMatrix(MB);
-
-         Set_True(Inp1);
 
          SetTrue;
          Suspend;
@@ -214,9 +210,7 @@ procedure Lab1 is
             Suspend_Until_True(Sem42);
          end Suspend;
       begin
-         Suspend_Until_True(Inp1);
          Put_Line("PROCESS T2 STARTED");
-         Set_True(Inp2);
 
          SetTrue;
          Suspend;
@@ -264,7 +258,7 @@ procedure Lab1 is
             Suspend_Until_True(Sem43);
          end;
       begin
-         Suspend_Until_True(Inp2);
+         Suspend_Until_True(Sem13);
 
          Put_Line("PROCESS T3 STARTED");
          Put_Line("ENTER MATRIX MK");
@@ -272,7 +266,7 @@ procedure Lab1 is
          Put_Line("ENTER MATRIX MM");
          AssignMatrix(MM);
 
-         Set_True(Inp3);
+         Set_True(Sem34);
          SetTrue;
          Suspend;
 
@@ -326,7 +320,7 @@ procedure Lab1 is
          end;
       begin
 
-         Suspend_Until_True(Inp3);
+         Suspend_Until_True(Sem34);
          Put_Line("PROCESS T4 STARTED");
          Put_Line("ENTER MATRIX MC");
          AssignMatrix(MC);
