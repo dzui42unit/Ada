@@ -29,7 +29,7 @@ procedure Lab1 is
       return (N);
    end;
 
-   N : Natural := GetSize;
+   N : Natural := 4;
    P : Natural := 4;
    H : Natural := N / P;
 
@@ -53,7 +53,6 @@ procedure Lab1 is
    MC : matrix := CreateMatrix(N);
    MM : matrix := CreateMatrix(N);
    MK : matrix := CreateMatrix(N);
-   MC_MUL_MK : matrix := CreateMatrix(N);
 
    procedure AssignMatrix(MA : in out matrix) is
    begin
@@ -61,13 +60,13 @@ procedure Lab1 is
          loop
             for j in MA'First(2) .. MA'Last(2)
             loop
-                Put("Enter element ");
-                Put(i);
-                Put(" ");
-                Put(j);
-                Put(" ");
-                Get(MA(i, j));
-                --MA(i, j) := i;
+                --Put("Enter element ");
+                --Put(i);
+                --Put(" ");
+                --Put(j);
+                --Put(" ");
+                --Get(MA(i, j));
+                MA(i, j) := i;
             end loop;
          end loop;
    end AssignMatrix;
@@ -136,12 +135,12 @@ procedure Lab1 is
       task T3;
       task T4;
 
-      MC_MUL_MK : matrix := CreateMatrix(N);
-      MC_MUL_MK_MUL_MB : matrix := CreateMatrix(N);
+      MT : matrix := CreateMatrix(N);
+      MX : matrix := CreateMatrix(N);
 
       task body T1 is
+
          MC_COPY1 : matrix := CreateMatrix(N);
-         MK_COPY1 : matrix := CreateMatrix(N);
          MB_COPY1 : matrix := CreateMatrix(N);
          S_COPY1 : Integer;
 
@@ -151,6 +150,7 @@ procedure Lab1 is
             Set_True(Sem13);
             Set_True(Sem14);
          end SetTrue;
+
          procedure Suspend is
          begin
             Suspend_Until_True(Sem21);
@@ -161,29 +161,27 @@ procedure Lab1 is
       begin
          Put_Line("PROCESS T1 STARTED!");
 
-         Put_Line("ENTER MATRIX MB");
          AssignMatrix(MB);
 
          SetTrue;
          Suspend;
+
          Suspend_Until_True(SemCopy);
-         MK_COPY1 := MK;
          MC_COPY1 := MC;
          S_COPY1 := S;
          MB_COPY1 := MB;
          Set_True(SemCopy);
 
-         MultiplyMatrix(MC_COPY1, MK_COPY1, MC_MUL_MK, 1, H);
-         SetTrue;
-         Suspend;
-
-
+         MultiplyMatrix(MC_COPY1, MK, MT, 1, H);
          MulMatrixByNumber(MM, 1, H, S_COPY1);
-         MultiplyMatrix(MB_COPY1, MC_MUL_MK, MC_MUL_MK_MUL_MB, 1, H);
+         SetTrue;
+         Suspend;
+
+         MultiplyMatrix(MB_COPY1, MT, MX, 1, H);
          SetTrue;
 
          Suspend;
-         AddMatrix(MC_MUL_MK_MUL_MB, MM, MA, 1, H);
+         AddMatrix(MX, MM, MA, 1, H);
          SetTrue;
          Put_Line("PROCESS T1 FINISHED!");
          Set_True(S1);
@@ -191,7 +189,6 @@ procedure Lab1 is
 
       task body T2 is
          MC_COPY2 : matrix := CreateMatrix(N);
-         MK_COPY2 : matrix := CreateMatrix(N);
          MB_COPY2 : matrix := CreateMatrix(N);
          S_COPY2 : Integer;
 
@@ -215,22 +212,21 @@ procedure Lab1 is
          Suspend;
 
          Suspend_Until_True(SemCopy);
-         MK_COPY2 := MK;
          MC_COPY2 := MC;
          S_COPY2 := S;
          MB_COPY2 := MB;
          Set_True(SemCopy);
 
-         MultiplyMatrix(MC_COPY2, MK_COPY2, MC_MUL_MK, H + 1, 2 * H);
+         MultiplyMatrix(MC_COPY2, MK, MT, H + 1, 2 * H);
          MulMatrixByNumber(MM, H + 1, 2 * H, S_COPY2);
          SetTrue;
 
          Suspend;
-         MultiplyMatrix(MB_COPY2, MC_MUL_MK, MC_MUL_MK_MUL_MB, H + 1,2 * H);
+         MultiplyMatrix(MB_COPY2, MT, MX, H + 1,2 * H);
          SetTrue;
 
          Suspend;
-         AddMatrix(MC_MUL_MK_MUL_MB, MM, MA, H + 1, 2 * H);
+         AddMatrix(MX, MM, MA, H + 1, 2 * H);
          SetTrue;
          Put_Line("PROCESS T2 FINISHED!");
          Set_True(S2);
@@ -238,7 +234,6 @@ procedure Lab1 is
 
       task body T3 is
          MC_COPY3 : matrix := CreateMatrix(N);
-         MK_COPY3 : matrix := CreateMatrix(N);
          MB_COPY3 : matrix := CreateMatrix(N);
          S_COPY3 : Integer;
 
@@ -259,31 +254,28 @@ procedure Lab1 is
          Suspend_Until_True(Sem13);
 
          Put_Line("PROCESS T3 STARTED");
-         Put_Line("ENTER MATRIX MK");
          AssignMatrix(MK);
-         Put_Line("ENTER MATRIX MM");
          AssignMatrix(MM);
 
          SetTrue;
          Suspend;
 
          Suspend_Until_True(SemCopy);
-         MK_COPY3 := MK;
          MC_COPY3 := MC;
          S_COPY3 := S;
          MB_COPY3 := MB;
          Set_True(SemCopy);
 
-         MultiplyMatrix(MC_COPY3, MK_COPY3, MC_MUL_MK, 2 * H + 1, 3 * H);
+         MultiplyMatrix(MC_COPY3, MK, MT, 2 * H + 1, 3 * H);
          MulMatrixByNumber(MM, 2 * H + 1, 3 * H, S_COPY3);
          SetTrue;
 
          Suspend;
-         MultiplyMatrix(MB_COPY3, MC_MUL_MK, MC_MUL_MK_MUL_MB, 2 * H + 1, 3 * H);
+         MultiplyMatrix(MB_COPY3, MT, MX, 2 * H + 1, 3 * H);
          SetTrue;
 
          Suspend;
-         AddMatrix(MC_MUL_MK_MUL_MB, MM, MA, 2 * H + 1, 3 * H);
+         AddMatrix(MX, MM, MA, 2 * H + 1, 3 * H);
          SetTrue;
 
          Suspend_Until_True(S1);
@@ -297,7 +289,6 @@ procedure Lab1 is
 
       task body T4 is
          MC_COPY4 : matrix := CreateMatrix(N);
-         MK_COPY4 : matrix := CreateMatrix(N);
          MB_COPY4 : matrix := CreateMatrix(N);
          S_COPY4 : Integer;
 
@@ -318,31 +309,28 @@ procedure Lab1 is
 
          Suspend_Until_True(Sem34);
          Put_Line("PROCESS T4 STARTED");
-         Put_Line("ENTER MATRIX MC");
          AssignMatrix(MC);
-         Put("ENTER S VALUE ");
-         Get(S);
+         S := 5;
 
          SetTrue;
          Suspend;
 
          Suspend_Until_True(SemCopy);
-         MK_COPY4 := MK;
          MC_COPY4 := MC;
          S_COPY4 := S;
          MB_COPY4 := MB;
          Set_True(SemCopy);
 
-         MultiplyMatrix(MC_COPY4, MK_COPY4, MC_MUL_MK, 3 * H + 1, 4 * H);
+         MultiplyMatrix(MC_COPY4, MK, MT, 3 * H + 1, 4 * H);
          MulMatrixByNumber(MM, 3 * H + 1, 4 * H, S_COPY4);
          SetTrue;
 
          Suspend;
-         MultiplyMatrix(MB_COPY4, MC_MUL_MK, MC_MUL_MK_MUL_MB, 3 * H + 1, 4 * H);
+         MultiplyMatrix(MB_COPY4, MT, MX, 3 * H + 1, 4 * H);
          SetTrue;
 
          Suspend;
-         AddMatrix(MC_MUL_MK_MUL_MB, MM, MA, 3 * H + 1, 4 * H);
+         AddMatrix(MX, MM, MA, 3 * H + 1, 4 * H);
          SetTrue;
          Put_Line("PROCESS T4 FINISHED!");
          Set_True(S4);
